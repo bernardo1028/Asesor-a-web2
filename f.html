@@ -1,0 +1,54 @@
+<div class="container h-100">
+    <div class="d-flex justify-content-center h-100">
+        <div class="user_card">
+            <div class="d-flex justify-content-center">
+                <div class="brand_logo_container">
+                    <img src="img/leer.png" class="brand_logo" alt="Logo">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center form_container">
+                <form action="<?php echo $_SERVER['PHP_SELF'] ?>" enctype="multipart/form-data" method="post">
+                    <div class="input-group mb-3">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" name="nombre" class="form-control input_user" value="<?php echo $usuario[0]["nombre"]; ?>" placeholder="Nombre">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" name="usuario" class="form-control input_user" value="<?php echo $usuario[0]["usuario"]; ?>" placeholder="Usuario">
+                    </div>
+                    
+                    <div class="input-group mb-3">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" name="profesion" class="form-control input_user" value="<?php echo $usuario[0]["profesion"]; ?>" placeholder="Profesion">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" name="correo" class="form-control input_user" value="<?php echo $usuario[0]["correo"]; ?>" placeholder="Correo">
+                    </div>
+                    <input type="file" name="foto" >
+                        <div class="d-flex justify-content-center mt-3 login_container">
+                            <input type="submit" value="editar" name="editar" class="btn login_btn" >
+               </div>
+                </form>
+                <div class="registrar">
+                    <a href="perfil.php?CodUsua=<?php echo $_SESSION['CodUsua']; ?>">Volver al perfil</a>
+                </div>
+            </div>
+    
+        
+        </div>
+    </div>
+</div>
+      
+        </div>
+    </div>
+</div>
+</div>
