@@ -3,7 +3,7 @@
 
 universidad polictenica de tecamac 
 
-carrera:ingeneria sotfware
+carrera:ingeneria software
 
 integrantes 
 LUIS ARATH RIVAS NAVA:132112
